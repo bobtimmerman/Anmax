@@ -1,0 +1,42 @@
+
+$text-light: #E0E0E0;
+$primary-color:#1A237E;
+$primary-accent: #F48FB1;
+
+.homecontainer {
+height: 70vh;
+ background-image: url("../../assets/WEBDESIGNMYSQLPHPCSSHTMLJAVASCRIPTAJAXCMSText.jpg");
+ background-position: center;
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+}
+
+.features-icons {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: $primary-accent;
+  color: $text-light;
+
+  .features-icons-item {
+    //max-width: 30rem;
+
+
+    .features-icons-icon {
+      height: 7rem;
+
+      i {
+        color: blue;
+        font-size: 4.5rem;
+        text-shadow: 2px 2px black;
+      }
+    }
+    &:hover {
+      .features-icons-icon {
+        i {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+}
+

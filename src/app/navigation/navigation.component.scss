@@ -1,0 +1,36 @@
+
+mat-toolbar {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+@media (max-width: 800px){
+  .row2{
+      display: none;
+  }
+
+}
+
+@media (min-width: 801px){
+  .row1{
+      display: none;
+  }
+
+}
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+
+.button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+

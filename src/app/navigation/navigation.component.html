@@ -1,0 +1,53 @@
+<mat-toolbar color="primary" >
+
+  <mat-toolbar-row class="row1">
+    <span>Anmax Web Design</span>
+
+<!--menu for mobile menu-->
+
+    <mat-menu #rootMenu="matMenu">
+        <button mat-menu-item routerLink="/home" routerLinkActive="active">Home</button>
+        <button mat-menu-item routerLink="/about" routerLinkActive="active">About</button>
+        <button mat-menu-item [matMenuTriggerFor]="subMenu">Services</button>
+        <button mat-menu-item routerLink="/contact" routerLinkActive="active">Contact</button>
+      </mat-menu>
+
+      <mat-menu #subMenu="matMenu">
+        <button mat-menu-item routerLink="." routerLinkActive="active current">service 1</button>
+        <button mat-menu-item routerLink="." routerLinkActive="active current">service 2</button>
+      </mat-menu>
+
+      <button mat-icon-button [matMenuTriggerFor]="rootMenu" class="ml-auto">
+        <mat-icon class="mb-2"><svg fill="#fff" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg></mat-icon>
+      </button>
+
+
+  </mat-toolbar-row>
+<!--end of menu for mobile menu-->
+<!--menu for wide menu-->
+
+  <mat-toolbar-row class="row2">
+
+<h1>Anmax Web Design </h1>
+
+<div class="button-row pl-5">
+    <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+    <a mat-button routerLink="/contact" routerLinkActive="active">About</a>
+    <a mat-button [matMenuTriggerFor]="services">Services<mat-icon>expand_more</mat-icon></a>
+    <a mat-button routerLink="/contact" routerLinkActive="active">Contact</a>
+  </div>
+
+  <mat-menu #services="matMenu">
+    <ul style="list-style-type: none; margin: 0; padding: 0;" >
+   <li> <a mat-button routerLink="/." routerLinkActive="active">service1</a></li>
+    <li>  <a mat-button routerLink="/." routerLinkActive="active">service2</a></li>
+    </ul>
+  </mat-menu>
+
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
