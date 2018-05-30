@@ -5,10 +5,26 @@
 @include mat-core();
 
 // Define the default theme (same as the example above).
-$candy-app-primary: mat-palette($mat-indigo);
-$candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
-$candy-app-warn:    mat-palette($mat-red);
-$candy-app-theme:   mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+$my-theme-primary: mat-palette($mat-red, A700, A200, 800);
+$my-theme-accent:  mat-palette($mat-orange, A400, A200, A800);
+$my-theme-warn:    mat-palette($mat-yellow, 400);
+
+$my-theme:   mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
 
 // Include the default theme styles.
-@include angular-material-theme($candy-app-theme);
+@include angular-material-theme($my-theme);
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+$color-red-primary: #d50000;
+$color-red-primary-light: #ff5131;
+$color-red-primary-dak: #9b0000;
+
+$color-orange-accent: #ffa726;
+$color-orange-accent-light:#ffd95b ;
+$color-orange-accent-dark: #c77800 ;
+
+$color-warning: #ffee58

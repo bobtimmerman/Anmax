@@ -1,7 +1,14 @@
-
 $text-light: #E0E0E0;
-$primary-color:#1A237E;
-$primary-accent: #F48FB1;
+$text-dark: #212121;
+$color-red-primary: #d50000;
+$color-red-primary-light: #ff5131;
+$color-red-primary-dark: #9b0000;
+
+$color-orange-accent: #ffa726;
+$color-orange-accent-light:#ffd95b ;
+$color-orange-accent-dark: #c77800 ;
+
+$color-warning: #ffee58;
 
 .homecontainer {
 height: 70vh;
@@ -14,8 +21,8 @@ height: 70vh;
 .features-icons {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: $primary-accent;
-  color: $text-light;
+  background-color: $color-orange-accent;
+  color: #text-dark;
 
   .features-icons-item {
     //max-width: 30rem;
@@ -25,7 +32,7 @@ height: 70vh;
       height: 7rem;
 
       i {
-        color: blue;
+        color: $color-red-primary-light;
         font-size: 4.5rem;
         text-shadow: 2px 2px black;
       }
@@ -40,3 +47,10 @@ height: 70vh;
   }
 }
 
+
+
+.subscription-section
+{
+  background-color: $color-red-primary-dark;
+  color: #fff;
+}

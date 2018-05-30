@@ -1,12 +1,16 @@
 $text-light: #E0E0E0;
-$primary-color:#1A237E;
-$primary-accent: #F48FB1;
+$color-red-primary: #d50000;
+$color-red-primary-light: #ff5131;
+$color-red-primary-dak: #9b0000;
 
+$color-orange-accent: #ffa726;
+$color-orange-accent-light:#ffd95b ;
+$color-orange-accent-dark: #c77800 ;
 
-.subscription-section
-{
-  background-color: $primary-color;
-  color: #fff;
+$color-warning: #ffee58;
+
+.footer {
+  background-color: $color-red-primary-light;
 }
 
 .footer-icons {
@@ -22,4 +26,5 @@ text-align: center;
 
 .footer-links{
   text-align: center;
+  color: $text-light;
 }

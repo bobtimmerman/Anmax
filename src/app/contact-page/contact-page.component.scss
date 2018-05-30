@@ -1,8 +1,8 @@
-.wrapper {
-  //background-color: #BDBDBD;
-  padding: 0;
-  margin: 0;
-}
+$text-light: #E0E0E0;
+$primary-color:#1A237E;
+$primary-accent: #F48FB1;
+
+
 
 .hero-image {
 height: 40vh;
@@ -11,6 +11,10 @@ background-image:url("../../assets/WEBDESIGNMYSQLPHPCSSHTMLJAVASCRIPTAJAXCMSText
 background-position: center;
 background-size: cover;
 //background-repeat: no-repeat;
+}
+
+.wrapper {
+  background-color: #F5F5F5;
 }
 
 .contact-header
@@ -22,14 +26,16 @@ background-size: cover;
      font-size: 40px;
      text-transform: uppercase;
      text-align: center;
-     color: #BDBDBD;
-     font-weight: 700
+     color: $primary-color;
+     font-weight: 900;
+     padding-bottom: 30px;
+
    }
 
  }
 
  .contact-map {
-   
+
    text-align: center;
 
  }

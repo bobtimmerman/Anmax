@@ -8,14 +8,14 @@
     <mat-menu #rootMenu="matMenu">
         <button mat-menu-item routerLink="/home" routerLinkActive="active">Home</button>
         <button mat-menu-item routerLink="/about" routerLinkActive="active">About</button>
-        <button mat-menu-item [matMenuTriggerFor]="subMenu">Services</button>
+       <!-- <button mat-menu-item [matMenuTriggerFor]="subMenu">Services</button> -->
         <button mat-menu-item routerLink="/contact" routerLinkActive="active">Contact</button>
       </mat-menu>
 
-      <mat-menu #subMenu="matMenu">
+     <!-- <mat-menu #subMenu="matMenu">
         <button mat-menu-item routerLink="." routerLinkActive="active current">service 1</button>
         <button mat-menu-item routerLink="." routerLinkActive="active current">service 2</button>
-      </mat-menu>
+      </mat-menu> -->
 
       <button mat-icon-button [matMenuTriggerFor]="rootMenu" class="ml-auto">
         <mat-icon class="mb-2"><svg fill="#fff" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
@@ -35,17 +35,17 @@
 
 <div class="button-row pl-5">
     <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
-    <a mat-button routerLink="/contact" routerLinkActive="active">About</a>
-    <a mat-button [matMenuTriggerFor]="services">Services<mat-icon>expand_more</mat-icon></a>
+    <a mat-button routerLink="/about" routerLinkActive="active">About</a>
+   <!-- <a mat-button [matMenuTriggerFor]="services">Services<mat-icon>expand_more</mat-icon></a> -->
     <a mat-button routerLink="/contact" routerLinkActive="active">Contact</a>
   </div>
 
-  <mat-menu #services="matMenu">
+ <!-- <mat-menu #services="matMenu">
     <ul style="list-style-type: none; margin: 0; padding: 0;" >
    <li> <a mat-button routerLink="/." routerLinkActive="active">service1</a></li>
     <li>  <a mat-button routerLink="/." routerLinkActive="active">service2</a></li>
     </ul>
-  </mat-menu>
+  </mat-menu> -->
 
   </mat-toolbar-row>
 

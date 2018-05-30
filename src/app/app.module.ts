@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { SubscriptionFormComponent } from './subscription-form/subscription-form.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SubscriptionFormComponent } from './subscription-form/subscription-form
     FooterComponent,
     NavigationComponent,
     ContactFormComponent,
-    SubscriptionFormComponent
+    SubscriptionFormComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
